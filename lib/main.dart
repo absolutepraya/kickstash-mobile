@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kickstash/menu.dart';
+import 'package:kickstash/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
       title: 'KickStash',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.deepPurple,
-        ).copyWith(secondary: Colors.deepPurple[400]),
+          primarySwatch: Colors.grey,
+        ).copyWith(secondary: Colors.grey[800]),
         useMaterial3: true,
       ),
       home: MyHomePage(),
