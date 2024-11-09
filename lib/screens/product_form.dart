@@ -52,6 +52,9 @@ class _ProductFormPageState extends State<ProductFormPage> {
                     if (value == null || value.isEmpty) {
                       return "Nama produk tidak boleh kosong!";
                     }
+                    if (value.length < 3) {
+                      return "Nama produk harus memiliki minimal 3 karakter!";
+                    }
                     return null;
                   },
                 ),
@@ -71,12 +74,15 @@ class _ProductFormPageState extends State<ProductFormPage> {
                       _desc = value!;
                     });
                   },
-                  validator: (String? value) {
+                    validator: (String? value) {
                     if (value == null || value.isEmpty) {
                       return "Deskripsi produk tidak boleh kosong!";
                     }
+                    if (value.length < 3) {
+                      return "Deskripsi produk harus memiliki minimal 3 karakter!";
+                    }
                     return null;
-                  },
+                    },
                 ),
               ),
               Padding(
