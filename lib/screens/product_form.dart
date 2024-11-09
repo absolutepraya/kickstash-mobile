@@ -13,6 +13,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
   String _name = "";
   String _desc = "";
   int _price = 0;
+  int _stock = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -114,6 +115,35 @@ class _ProductFormPageState extends State<ProductFormPage> {
                   },
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "Stok produk",
+                    labelText: "Stok produk",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                  onChanged: (String? value) {
+                    setState(() {
+                      _stock = int.tryParse(value!) ?? 0;
+                    });
+                  },
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return "Stok produk tidak boleh kosong!";
+                    }
+                    if (int.tryParse(value) == null) {
+                      return "Stok produk harus berupa angka!";
+                    }
+                    if (int.tryParse(value)! <= 0) {
+                      return "Stok produk harus lebih dari 0!";
+                    }
+                    return null;
+                  },
+                ),
+              ),
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
@@ -137,6 +167,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
                                     Text('Nama: $_name'),
                                     Text('Deskripsi: $_desc'),
                                     Text('Harga: $_price'),
+                                    Text('Stok: $_stock'),
                                   ],
                                 ),
                               ),

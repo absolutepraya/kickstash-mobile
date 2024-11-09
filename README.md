@@ -386,7 +386,7 @@
 
     Elemen input yang saya gunakan pada halaman _form_ yang saya buat pada tugas kali ini adalah `TextFormField` dan `ElevatedButton`.
 
-    - `TextFormField` adalah _widget_ yang digunakan untuk membuat elemen input berupa _text field_ pada aplikasi Flutter. Di proyek ini, saya menggunakan `TextFormField` untuk membuat elemen input `name`, `description`, dan `price`.
+    - `TextFormField` adalah _widget_ yang digunakan untuk membuat elemen input berupa _text field_ pada aplikasi Flutter. Di proyek ini, saya menggunakan `TextFormField` untuk membuat elemen input `name`, `description`, `price`, dan `stock`.
     - `ElevatedButton` adalah _widget_ yang digunakan untuk membuat tombol dengan _elevation_ pada aplikasi Flutter. Di proyek ini, saya menggunakan `ElevatedButton` untuk membuat tombol `Save`.
 
     Elemen input Flutter lain yang tidak saya gunakan pada tugas ini adalah `TextField`, `DropdownButton`, `Checkbox`, `Radio`, `Switch`, dan lain sebagainya, karena elemen input tersebut tidak diperlukan pada tugas ini.
