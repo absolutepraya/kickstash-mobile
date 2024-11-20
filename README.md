@@ -2,8 +2,12 @@
 
 -   [Pertanyaan dan Jawaban](#Pertanyaan-dan-Jawaban)
     -   [Tugas 7](#Tugas-7--Pertanyaan-dan-Jawaban)
+    -   [Tugas 8](#Tugas-8--Pertanyaan-dan-Jawaban)
+    -   [Tugas 9](#Tugas-9--Pertanyaan-dan-Jawaban)
 -   [Checklist Tugas](#Checklist-Tugas)
     -   [Tugas 7](#Tugas-7--Checklist)
+    -   [Tugas 8](#Tugas-8--Checklist)
+    -   [Tugas 9](#Tugas-9--Checklist)
 
 ## Pertanyaan dan Jawaban
 
