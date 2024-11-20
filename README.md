@@ -433,7 +433,68 @@
 
 ### Tugas 9 — Pertanyaan dan Jawaban
 
+1. Jelaskan mengapa kita perlu membuat model untuk melakukan pengambilan ataupun pengiriman data JSON? Apakah akan terjadi error jika kita tidak membuat model terlebih dahulu?
 
+    Model digunakan untuk memudahkan pengambilan dan pengiriman data JSON pada aplikasi Flutter. Dengan menggunakan model, kita dapat mengatur _properties_ dan _methods_ yang digunakan untuk mengambil dan mengirim data JSON dengan mudah dan efisien.
+
+    Jika kita tidak membuat model terlebih dahulu, akan terjadi error saat melakukan pengambilan atau pengiriman data JSON. Kita tidak dapat mengatur _properties_ dan _methods_ yang digunakan untuk mengambil dan mengirim data JSON dengan benar, sehingga akan terjadi error saat melakukan pengambilan atau pengiriman data JSON.
+
+2. Jelaskan fungsi dari library _http_ yang sudah kamu implementasikan pada tugas ini.
+
+    Library `http` digunakan untuk melakukan _HTTP requests_ pada aplikasi Flutter. Dengan menggunakan library `http`, kita dapat melakukan _HTTP requests_ seperti `GET`, `POST`, `PUT`, `DELETE`, dan lain sebagainya pada aplikasi Flutter.
+
+    Contoh implementasi _HTTP requests_ menggunakan library `http`:
+
+    ```dart
+    import 'package:http/http.dart' as http;
+
+    Future<void> fetchData() async {
+        final response = await http.get(Uri.parse('https://api.example.com/data'));
+
+        if (response.statusCode == 200) {
+            print(response.body);
+        } else {
+            throw Exception('Failed to load data');
+        }
+    }
+    ```
+
+    Dengan menggunakan library `http`, kita dapat melakukan _HTTP requests_ dengan mudah dan efisien pada aplikasi Flutter yang kita buat.
+
+3. Jelaskan fungsi dari CookieRequest dan jelaskan mengapa _instance_ CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+
+    CookieRequest adalah _instance_ yang digunakan untuk menyimpan _cookie_ yang diterima dari _HTTP response_ pada aplikasi Flutter. _Instance_ CookieRequest perlu dibagikan ke semua komponen di aplikasi Flutter agar _cookie_ yang diterima dari _HTTP response_ dapat digunakan oleh semua komponen di aplikasi Flutter.
+
+    Dengan menggunakan _instance_ CookieRequest, kita dapat menyimpan _cookie_ yang diterima dari _HTTP response_ dan menggunakannya di semua komponen di aplikasi Flutter. Hal ini akan memudahkan kita dalam mengelola _cookie_ yang diterima dari _HTTP response_ dan menggunakannya di semua komponen di aplikasi Flutter.
+
+4. Jelaskan mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter.
+
+    Mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter adalah sebagai berikut:
+
+    1. Pengguna memasukkan data melalui elemen input seperti `TextFormField`, `DropdownButton`, `Checkbox`, `Radio`, `Switch`, dan lain sebagainya.
+    2. Data yang dimasukkan oleh pengguna akan disimpan ke dalam variabel atau _state_ pada _stateful widget_ atau _state management_ yang digunakan.
+    3. Data yang disimpan akan dikirim ke _endpoint_ atau _API_ yang dituju menggunakan _HTTP requests_ seperti `GET`, `POST`, `PUT`, `DELETE`, dan lain sebagainya.
+    4. _API_ akan memproses data yang diterima dan mengirimkan _response_ berupa data JSON.
+    5. Data JSON yang diterima akan disimpan ke dalam variabel atau _state_ pada _stateful widget_ atau _state management_ yang digunakan.
+    6. Data JSON yang disimpan akan ditampilkan pada aplikasi Flutter menggunakan _widget_ seperti `Text`, `ListView`, `GridView`, `Card`, dan lain sebagainya.
+
+    Dengan menggunakan mekanisme di atas, data yang dimasukkan oleh pengguna akan dikirim ke _API_ yang dituju dan ditampilkan pada aplikasi Flutter dengan mudah dan efisien.
+
+5. Jelaskan mekanisme autentikasi dari login, register, hingga logout. Mulai dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+
+    Mekanisme autentikasi dari login, register, hingga logout adalah sebagai berikut:
+
+    1. Pengguna memasukkan data akun seperti _username_ dan _password_ pada elemen input seperti `TextFormField`.
+    2. Data akun yang dimasukkan oleh pengguna akan disimpan ke dalam variabel atau _state_ pada _stateful widget_ atau _state management_ yang digunakan.
+    3. Data akun yang disimpan akan dikirim ke _endpoint_ atau _API_ yang dituju menggunakan _HTTP requests_ seperti `POST`.
+    4. _API_ akan memproses data akun yang diterima dan mengirimkan _response_ berupa data JSON.
+    5. Data JSON yang diterima akan disimpan ke dalam variabel atau _state_ pada _stateful widget_ atau _state management_ yang digunakan.
+    6. Jika proses autentikasi berhasil, pengguna akan diarahkan ke halaman menu pada aplikasi Flutter.
+    7. Jika proses autentikasi gagal, pengguna akan diberikan pesan kesalahan dan diminta untuk memasukkan data akun yang benar.
+
+    Dengan menggunakan mekanisme di atas, pengguna dapat melakukan autentikasi dari login, register, hingga logout dengan mudah dan efisien pada aplikasi Flutter yang dibuat.
+
+6. Jelaskan bagaimana cara kamu mengimplementasikan _checklist_ di atas secara _step-by-step_! (bukan hanya sekadar mengikuti tutorial).
 
 ## Checklist Tugas
 
