@@ -431,6 +431,10 @@
 
     Dengan menggunakan `Navigator` dan `MaterialPageRoute`, saya dapat mengatur navigasi antar halaman dengan mudah dan efisien pada aplikasi Flutter yang saya buat.
 
+### Tugas 9 — Pertanyaan dan Jawaban
+
+
+
 ## Checklist Tugas
 
 ### Tugas 7 — Checklist
@@ -476,4 +480,27 @@
     -   [x] Sebutkan apa saja elemen input yang kamu gunakan pada halaman _form_ yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
     -   [x] Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
     -   [x] Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+-   [x] Melakukan `add`-`commit`-`push` ke GitHub.
+
+### Tugas 9 — Checklist
+
+-   [x] Memastikan _deployment_ proyek tugas Django kamu telah berjalan dengan baik.
+-   [x] Mengimplementasikan fitur registrasi akun pada proyek tugas Flutter.
+-   [x] Membuat halaman login pada proyek tugas Flutter.
+-   [x] Mengintegrasikan sistem autentikasi Django dengan proyek tugas Flutter.
+-   [x] Membuat model kustom sesuai dengan proyek aplikasi Django.
+-   [x] Membuat halaman yang berisi daftar semua item yang terdapat pada _endpoint_ `JSON` di Django yang telah kamu _deploy_.
+    -   [x] Tampilkan _name_, _price_, dan _description_ dari masing-masing item pada halaman ini.
+-   [x] Membuat halaman detail untuk setiap item yang terdapat pada halaman daftar Item.
+    -   [x] Halaman ini dapat diakses dengan menekan salah satu item pada halaman daftar Item.
+    -   [x] Tampilkan seluruh atribut pada model item kamu pada halaman ini.
+    -   [x] Tambahkan tombol untuk kembali ke halaman daftar item.
+-   [x] Melakukan filter pada halaman daftar item dengan hanya menampilkan item yang terasosiasi dengan pengguna yang login.
+-   [x] Menjawab beberapa pertanyaan berikut pada `README.md` pada _root folder_ (silakan modifikasi `README.md` yang telah kamu buat sebelumnya; tambahkan subjudul untuk setiap tugas).
+    -   [x] Jelaskan mengapa kita perlu membuat model untuk melakukan pengambilan ataupun pengiriman data JSON? Apakah akan terjadi error jika kita tidak membuat model terlebih dahulu?
+    -   [x] Jelaskan fungsi dari library _http_ yang sudah kamu implementasikan pada tugas ini
+    -   [x] Jelaskan fungsi dari CookieRequest dan jelaskan mengapa _instance_ CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+    -   [x] Jelaskan mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter.
+    -   [x] Jelaskan mekanisme autentikasi dari login, register, hingga logout. Mulai dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+    -   [ ] Jelaskan bagaimana cara kamu mengimplementasikan _checklist_ di atas secara _step-by-step_! (bukan hanya sekadar mengikuti tutorial).
 -   [x] Melakukan `add`-`commit`-`push` ke GitHub.
