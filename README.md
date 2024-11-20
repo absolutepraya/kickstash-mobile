@@ -58,7 +58,7 @@
     final String className = 'PBP D';
 
     final List<ItemHomepage> items = [
-        ItemHomepage("Lihat Produk", Icons.mood, Colors.blue),
+        ItemHomepage("Lihat Produk", Icons.inventory_2, Colors.blue),
         ItemHomepage("Tambah Produk", Icons.add, Colors.green),
         ItemHomepage("Logout", Icons.logout, Colors.red),
     ];

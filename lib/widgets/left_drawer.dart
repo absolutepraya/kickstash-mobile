@@ -68,7 +68,7 @@ class LeftDrawer extends StatelessWidget {
             leading: const Icon(Icons.inventory_2),
             title: const Text('Daftar Produk'),
             onTap: () {
-              // Route menu ke halaman mood
+              // Route menu ke halaman product
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const ProductPage()),
