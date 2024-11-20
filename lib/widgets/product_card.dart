@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kickstash/screens/list_product.dart';
 import 'package:kickstash/screens/product_form.dart';
 
 class ItemHomepage {
@@ -33,6 +34,15 @@ class ItemCard extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => const ProductFormPage(),
+              ),
+            );
+          }
+
+          else if (item.name == "Lihat Produk") {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const ProductPage(),
               ),
             );
           }

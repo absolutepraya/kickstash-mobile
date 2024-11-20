@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kickstash/screens/list_product.dart';
 import 'package:kickstash/screens/menu.dart';
 import 'package:kickstash/screens/product_form.dart';
 
@@ -51,7 +52,7 @@ class LeftDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.mood),
+            leading: const Icon(Icons.add),
             title: const Text('Tambah Produk'),
             // Bagian redirection ke ProductFormPage
             onTap: () {
@@ -61,6 +62,17 @@ class LeftDrawer extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => const ProductFormPage(),
                   ));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.inventory_2),
+            title: const Text('Daftar Produk'),
+            onTap: () {
+              // Route menu ke halaman mood
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductPage()),
+              );
             },
           ),
         ],
